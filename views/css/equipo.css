@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+*{
+    font-family: "M PLUS Code Latin", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#tapa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#tapa img{
+    width: 25%;
+    transition: 0.5s;
+
+}
+
+.main{
+    text-align: center;
+}
+
+.equipo{
+    height: 90%;
+    padding: 0;
+
+}
+.plantillaData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.datosEquipo_{
+    background-size: cover;
+    background-position: center center;
+}
+
+.datosEquipo{
+    background-color: rgba(255, 255, 255, 0.486);
+
+}
+
+.fotoEscudo{
+    height: 130px;
+}
+
+.nombreEquipo{
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    text-shadow: 5px 2px 2px rgb(255, 255, 255);
+}
+
+.nombreEstadio{
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    text-shadow: 5px 2px 2px rgb(255, 255, 255);
+}
+
+
+.navbar a:hover{
+
+    color:#FBD04B;
+
+}
+
+.jugador{
+    margin: 20px;
+    width: 250px;
+    border-style: solid;
+    display: inline-block;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.jugador_{
+    position: relative;
+    margin: 0;
+    z-index: 0;
+}
+
+
+.jugador_ .fotoJugador{
+    position: relative;
+    height: 240px;
+    margin: 0;
+    bottom: -10px;
+    z-index: -1;
+}
+
+.jugadorDatos{
+    width: 250px;
+    height: 170px;
+
+}
+.cargoJugador{
+    background-color: #f5433c;
+    font-size: 30px;
+    margin: 0;
+}
+
+.posicionDIV{
+    background-color: #f5433c;
+    display: inline-block;
+    width: 100%;
+    bottom:20px; 
+}
+
+
+.posicionJugador{
+    position: relative;
+    font-size: 30px;
+    margin: 0;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+/* Para la parte que se crea al hacer click */
+
+
+#DIVdatos .divJugador{
+    float: left;
+    margin-left:70px;
+    margin-top:20px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.61);
+
+}
+
+
+#DIVdatos .divJugador h1{
+    margin: 5px;
+}
+#DIVdatos .fotoJugador{
+    width: 250px;
+
+
+}
+
+
+#DIVdatos .DIVJugadorNuevo{
+    background-size: cover;
+    background-position: center center;
+}
+
+#DIVfoto{
+float: right;
+margin-right:70px;
+}
+
+#DIVfoto img{
+    width: 750px;
+    border-radius: 10px;
+
+
+}
+
+
+#nuevoDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.cruz{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 40px; 
+    color: #f5433c;
+    z-index: 100;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.datosarriba{
+    background-color: #f5433c;
+}
+
+@media only screen and (max-width: 800px) {
+    #DIVfoto{
+        display: none;
+        }
+
+    #DIVdatos .divJugador{
+    float: none;
+    margin-left:0px;
+    margin-top:10px;
+}
+
+
+#nuevoDiv{
+    width: 100%;
+    height: 100%;
+}
+  }
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend</title>
+    <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
+    <link rel="stylesheet" href="css/deleteJugadores.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="navbar">
+            <img class="liga" src="pic/logoLIGA.png" onclick="window.location.href='/'"">
+            <div class="user">
+            <button class="login" id="nombreUsuario" onclick="window.location.href='/login'"></button>
+            <img class="pais" id="pais" src="">
+        
+        </div>
+        </div>
+
+<div class="delete">
+    <div class="deleteJugadores">
+        <form action="/api/jugadoresDELETE" method="POST"> 
+    
+            <h1>Delete Jugadores</h1>
+            <div class="botones">
+                <button type="button" onclick="window.location.href='/deleteEquipos'">Equipos</button>
+                <button type="button" class="select">Jugadores</button>
+            </div>
+            <input type="text" name="id" id="inputID" placeholder="ID jugador">
+            <br><br><br>
+            <label for="confirmar">confirmar:</label>
+            <input type="text" name="confirmar" id="confirmar" placeholder="escribe CONFIRMAR">
+            <br><br><br>
+            <input type="submit" class="insertar" value="Eliminar">
+        </form>
+    </div>
+    
+    </div>
+</body>
+<div id="jugadores"></div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/deleteJugadores.js"></script>
+<script src="js/username.js"></script>
+<script src="js/general.js"></script>
+
+
+</html>

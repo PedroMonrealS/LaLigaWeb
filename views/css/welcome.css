@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "M PLUS Code Latin", monospace;
+}
+
+.main{
+    text-align: center;
+}
+
+.backend{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    background-color: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+    color:#FBD04B;
+}
+
+.footer{
+    background-color: #f5433c;
+    font-size: 10px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    text-align: center;
+}
+
+.backend{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    background-color: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+    color:#FBD04B;
+}
+
+.footer{
+    background-color: #f5433c;
+    font-size: 10px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#tapa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#tapa img{
+    width: 25%;
+    transition: 0.5s;
+
+}
+
+#slider {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 700px;
+    overflow: hidden;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+.divFoto{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slider h1{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px;
+    transition: opacity 1s;
+    color:white;
+    text-shadow: 2px 2px #f5433c;
+
+}
+
+
+.entrar{
+    text-align: center;
+    background-color: #f5433c;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
+    padding: 10px;
+    font-size: 40px;
+    transition: 0.3s;
+    margin: 20px;
+
+}
+
+.entrar:hover{
+    color:aliceblue;
+}

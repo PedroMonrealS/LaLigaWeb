@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend</title>
+    <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
+    <link rel="stylesheet" href="css/insertEquipos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="navbar">
+            <img class="liga" src="pic/logoLIGA.png" onclick="window.location.href='/'"">
+            <div class="user">
+            <button class="login" id="nombreUsuario" onclick="window.location.href='/login'"></button>
+            <img class="pais" id="pais" src="">
+        
+        </div>
+        </div>
+
+<div class="insert">
+    <form action="/api/equiposINSERT" method="post"> 
+    <h1>Insert Equipos</h1>
+    <div class="botones">
+        <button type="button" class="select">Equipos</button>
+        <button type="button" onclick="window.location.href='/insertjugadores'">Jugadores</button>
+    </div>
+    <input type="text" name="nombreEquipo" id="E" placeholder="Nombre equipo"><br>
+    <input type="text" name="nombreEstadio" placeholder="Nombre estadio"><br>
+    <input type="number" name="capacidadEstadio" placeholder="Capacidad estadio"><br>
+    <input type="number" name="anoFundacion" placeholder="Año fundación"><br>
+    <input type="text" name="fotoEscudo" placeholder="Foto escudo"><br>
+    <input type="text" name="fotoEstadio" placeholder="Foto estadio"><br>
+    <input type="submit"class="insertar"><br>
+
+    </form>
+</div>
+    </div>
+     
+</body>
+<div id="datos"></div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/insertEquipos.js"></script>
+<script src="js/username.js"></script>
+<script src="js/general.js"></script>
+
+
+</html>

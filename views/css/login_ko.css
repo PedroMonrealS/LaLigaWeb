@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "M PLUS Code Latin", monospace;
+}
+
+.main{
+    text-align: center;
+}
+
+.main h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+.main a{
+    transition: color 0.3s;
+    font-size: 40px;
+    padding: 20px;
+    margin:100px;
+    border-style: solid;
+    border-color: black;
+    color:black;
+    background: linear-gradient(90deg, rgba(255,78,78,1) 0%, rgba(255,88,88,1) 61%);
+    border-radius: 10px;
+}
+
+.main a:hover{
+
+    color:#FBD04B;
+}

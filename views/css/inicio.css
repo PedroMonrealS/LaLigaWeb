@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "M PLUS Code Latin", monospace;
+}
+
+.main{
+    text-align: center;
+}
+
+#datos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.equipoExistente{
+    width: 300px;
+    height: 450px;
+    border-style: solid;
+    margin: 15px;
+    text-align: center;
+    font-size: 13px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: #f5433c;
+
+}
+
+.datosEquipo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.842);
+    overflow: hidden;
+}
+
+.fotoEstadio{
+    width: 300px;
+    height: 250px;
+    border-top: solid;
+}
+
+
+.backend{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    background-color: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+
+    color:#FBD04B;
+
+}
+
+.footer{
+    background-color: #f5433c;
+    font-size: 10px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    text-align: center;
+}
+
+.backend{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    background-color: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+
+    color:#FBD04B;
+}
+
+.footer{
+    background-color: #f5433c;
+    font-size: 10px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tapa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#tapa img{
+    width: 25%;
+    transition: 0.5s;
+
+}

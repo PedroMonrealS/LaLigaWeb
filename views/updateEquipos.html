@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend</title>
+    <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
+    <link rel="stylesheet" href="css/updateEquipos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="navbar">
+            <img class="liga" src="pic/logoLIGA.png" onclick="window.location.href='/'"">
+            <div class="user">
+            <button class="login" id="nombreUsuario" onclick="window.location.href='/login'"></button>
+            <img class="pais" id="pais" src="">
+        
+        </div>
+        </div>
+
+<div class="insert">
+    <div class="insert">
+        <form action="/api/equiposUPDATE" method="POST"> 
+    
+            <h1>Update Equipos</h1>
+
+            <div class="botones">
+                <button type="button" class="select" >Equipos</button>
+                <button type="button" onclick="window.location.href='/updateJugadores'" >Jugadores</button>
+                
+            </div>
+            <input type="text" name="ID" id="inputID" placeholder="ID equipo"><br>
+            <input type="text" name="nombreEquipo" id="nombreEquipo" placeholder="Nombre equipo"><br>
+            <input type="text" name="nombreEstadio" id="nombreEstadio" placeholder="Nombre estadio"><br>
+            <input type="number" name="capacidadEstadio" id="capacidadEstadio" placeholder="Capacidad estadio"><br>
+            <input type="number" name="anoFundacion" id="anoFundacion" placeholder="Año fundación"><br>
+            <input type="text" name="fotoEscudo" id="fotoEscudo" placeholder="Foto escudo"><br>
+            <input type="text" name="fotoEstadio" id="fotoEstadio" placeholder="Foto estadio"><br>
+            <input type="submit" class="insertar" value="Actualizar"><br>
+    
+        </form>
+    </div>
+    
+    </div>
+</body>
+<div id="datos"></div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/updateEquipos.js"></script>
+<script src="js/username.js"></script>
+<script src="js/general.js"></script>
+
+
+</html>

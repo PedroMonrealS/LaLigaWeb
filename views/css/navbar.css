@@ -1,0 +1,75 @@
+
+.navbar{
+    background-color: #f5433c;
+    padding: 10px; 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: content-box;
+
+
+}
+
+
+.pais{
+    height: 30px;
+    margin: 5px;
+}
+
+
+.liga{
+    transition: scale 0.4s;
+    float: left;
+    margin-right: 15px;
+    height: 40px;
+    filter: invert();
+}
+.liga:hover{
+    scale: 1.1;
+}
+
+#nombreUsuario{
+    margin: 0;
+    font-size: 20px;
+
+}
+
+
+.login{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 30px;
+}
+
+
+.user{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(125, 156, 129, 0.412);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #f5433c;
+  }
+
+.fa-arrow-left{
+    position: absolute;
+    float: left;
+    margin: 10px;
+    font-size: 20px;
+    margin-top: 70px;
+}
